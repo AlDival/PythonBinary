@@ -1,4 +1,8 @@
 import binDec
 
-binary = input("Byte: ")
-print(binDec(binary))
+try:
+  binary = int(input("Byte: "))
+  print(binDec(binary))
+except ValueError:
+  print("Please insert a binary")
+  exit(2)

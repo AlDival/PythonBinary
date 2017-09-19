@@ -8,12 +8,11 @@ while n < 10:
             decimal = decimal*2 + int(num)
         print(decimal)
         break
-        if byte == 'Exit':
-            print("Exiting software")
-            break
-    else:
-        print("Whoops that is not an 8 bit byte. Try again,")
-    
+    if byte == 'Exit' or byte == 'exit':
+        print("Exiting software")
+        break
+    elif len(byte) > 8 or len(byte) < 8:
+        print("Not an 8 bit byte, please try again")
 
 
 

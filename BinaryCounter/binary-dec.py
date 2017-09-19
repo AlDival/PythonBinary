@@ -12,6 +12,6 @@ while n < 10:
         break
     if byte.lower() in ('exit'):
         print("Exiting software...")
-        program_exit(2)
+        program_exit(2) #exits programs in 2 seconds and with no errors
     elif len(byte) > 8 or len(byte) < 8:
         print("Not an 8 bit byte, please try again")

@@ -1,16 +1,16 @@
 #Binary to decimal converter
 def user_menu():
-  user_input = input('''Welcome to "binary to decimal" converter
+  user_input = int(input('''Welcome to "binary to decimal" converter
   [1]-Run the program
   [2]-Exit
-  [3]-View authors\n''')
+  [3]-View authors\n'''))
   
-  if user_input == '1':
+  if user_input == 1:
     binary = input("Enter A byte\n")
     print(binDec(binary))
-  elif user_input == '2':
+  elif user_input == 2:
     exit(2)
-  elif user_input == '3':
+  elif user_input == 3:
     print("Made by: DogeSec and Darth22345.")
     user_menu()
 

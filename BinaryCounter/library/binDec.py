@@ -18,8 +18,9 @@ def binDec(byte):
     while len(byte) == 8:
         decimal = 0
         for num in byte:
-            decimal = decimal*2 + int(num)
-        return(decimal) 
+            if num == '1' or num == '0': #only computes data in base 2
+                decimal = decimal*2 + int(num)
+        return (decimal)
     if len(byte) > 8 or len(byte) < 8: #Check length of the binary number
         print("Not an 8 bit byte, please try again.")
 

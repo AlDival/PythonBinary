@@ -6,7 +6,7 @@ def user_menu():
   [3]-View authors\n''')
   
   if user_input == '1':
-    binary = input("Byte: ")
+    binary = input("Enter A byte\n")
     print(binDec(binary))
   elif user_input == '2':
     exit(2)
@@ -24,4 +24,6 @@ def binDec(byte):
     if len(byte) > 8 or len(byte) < 8: #Check length of the binary number
         print("Not an 8 bit byte, please try again.")
 
-user_menu()
+if __name__ == '__main__':
+    user_menu()
+  

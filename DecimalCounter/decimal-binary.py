@@ -1,7 +1,6 @@
 import math 
 def base2(num):
-    return num**int(math.log(num, 2)) #generates the closest lower base2 number to the number provided
+    return 2**round((math.log2(num))) #generates the closest lower base2 number to the number provided
 
-number = int(input("Number: "))
-
-print(base2(number))
+number = int(input("Number: "))#Just here for testing purposes
+print(base2(number))#Just here for testing purposes

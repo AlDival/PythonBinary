@@ -8,5 +8,4 @@ def base2(num):
     else:
         return 2**int((math.log2(num))) #generates the closest lower base2 number to the number provided
 
-number = (input("Number: "))#Just here for testing purposes
-print(base2(number))#Just here for testing purposes
+

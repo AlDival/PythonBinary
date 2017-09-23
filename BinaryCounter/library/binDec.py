@@ -11,7 +11,7 @@ def user_menu():
   elif user_input == 2:
     exit(2)
   elif user_input == 3:
-    print("Made by: DogeSec and Darth22345.")
+    print("Made by: DogeSec, Darth22345 and Samuelb2020.")
     user_menu()
 
 def binDec(byte):

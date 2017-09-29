@@ -1,7 +1,7 @@
 #Binary Converter
 import program_exit
-n= 0
-while n < 10:
+
+while True:
     byte = input("Byte: ")
     byte = byte.lower()
     while len(byte) == 8:
